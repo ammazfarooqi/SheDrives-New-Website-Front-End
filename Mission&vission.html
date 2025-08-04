@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Style.scss">
+  <link rel="stylesheet" href="./Style.css"> <!-- not .scss -->
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand logo-text" href="#">SheDrives</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="./Index.html">Home</a>
+          </li>
+
+          <!-- About Us Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./About.html" id="aboutDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+              <li><a class="dropdown-item" href="#">Meet Our Founder</a></li>
+              <li><a class="dropdown-item" href="./Mission&vission.html">Mission & Vision</a></li>
+            </ul>
+          </li>
+
+          <!-- Contact Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./Contact.html" id="contactDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Contact
+            </a>
+            <ul class="dropdown-menu custom-dropdown" aria-labelledby="contactDropdown">
+              <li><a class="dropdown-item" href="#">Support Team</a></li>
+              <li><a class="dropdown-item" href="#">Policy & Rules</a></li>
+              <li><a class="dropdown-item" href="#">Collaboration & Advertising</a></li>
+              <li><a class="dropdown-item" href="#">Privacy</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">safety</a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <button class="btn custom-btn">Sign Up</button>
+          <button class="btn custom-btn">Login</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--Heart section -->
+  <section class="mission-section py-5">
+    <div class="container position-relative">
+
+      <!-- Background Shape -->
+      <div class="animated-bg-shape"></div>
+      <!-- Tag -->
+      <!-- <span class="mission-tag">Mission</span> -->
+      <!-- Heading -->
+      <h2 class="mission-title mb-3">We are driving change in <br> communities by <span> empowering people </span></h2>
+      <!-- Description -->
+      <p class="mission-desc">
+        Our mission is to empower women through driving education, mobility access, and community outreach by 2030.
+      </p>
+      <!-- Stats Row -->
+      <div class="row justify-content-flex-start  mt-4">
+        <div class="col-4 col-md-2 fade-in">
+          <h2 class="mission-stat">7</h2>
+          <p class="mission-label">programs</p>
+        </div>
+        <div class="col-4 col-md-2 fade-in">
+          <h2 class="mission-stat">21</h2>
+          <p class="mission-label">cities</p>
+        </div>
+        <div class="col-4 col-md-3 fade-in">
+          <h2 class="mission-stat">∞</h2>
+          <p class="mission-label">lives impacted</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ourmission -->
+  <section class="aim-vision-mission-section py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+
+        <!-- AIM and VISION cards (left side) -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm p-4 mb-4">
+            <h3 class="section-title"><span>OUR</span> <strong class="highlight">AIM</strong></h3>
+            <ul class="list-unstyled mt-3">
+              <li>• Revolutionize women's travel safety in Pakistan</li>
+              <li>• Enhance safety measures for women riders</li>
+              <li>• Expand the network of female drivers & provide employment</li>
+            </ul>
+          </div>
+          <div class="card shadow-sm p-4">
+            <h3 class="section-title"><span>OUR</span> <strong class="highlight">VISION</strong></h3>
+            <p class="mt-3">We envision a future where:</p>
+            <ul class="list-unstyled">
+              <li>• Women travel freely without fear or restriction</li>
+              <li>• Female drivers & riders create a supportive network</li>
+              <li>• Smart mobility solutions lead with technology</li>
+              <li>• Every ride empowers women with independence</li>
+            </ul>
+            <p class="mt-2">SheDrives is not just transport—it's a movement for change.</p>
+          </div>
+        </div>
+
+        <!-- MISSION section (right side) -->
+        <div class="col-lg-6">
+          <div class="mission-box p-4 h-100">
+            <h3 class="section-title text-white"><span>OUR</span> <strong class="highlight">MISSION</strong></h3>
+            <p class="text-white mt-3">
+              SheDrives is dedicated to empowering women through secure, inclusive, and tech-enabled transportation.
+              We aim to:
+            </p>
+            <ul class="text-white list-unstyled mt-3">
+              <li>• Break travel barriers for women through mobility</li>
+              <li>• Ensure safety via a trusted female-centric network</li>
+              <li>• Enable income opportunities for women drivers</li>
+              <li>• Foster sustainability via ride-sharing culture</li>
+              <li>• Build a strong, safe female rider-driver community</li>
+            </ul>
+            <p class="text-white mt-3">
+              Through innovation and inclusion, SheDrives is reshaping mobility in Pakistan.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- faq -->
+  <section class="faq-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="mission-title mb-5 text-center">Frequently Asked <span> Questions</span></h2>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne">
+                  Will my driver be a female?
+                  <span class="icon"></span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  SheDrives is a platform designed to empower women with driving skills and safety tools.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  What safety features does SheDrives offer?
+                  <span class="icon"></span>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can register by clicking on the 'Sign Up' button on the homepage and filling the required form.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How does fare calculation work?
+                  <span class="icon"></span>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We believe in giving freedom to both customers and drivers. The fare is based on distance and time,
+                  with a company-suggested fare that both you and the passenger can agree on within a certain range. You
+                  can propose your fare and engage in a meaningful negotiation to agree on a fair price that works for
+                  both parties.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  How do I book a ride with SheDrives?
+                  <span class="icon"></span>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can book a ride through the SheDrives app on Android and iOS. Enter your pickup and drop-off
+                  location, choose your preferred ride type, set your fare, and ride without stress.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer class="shedrives-footer position-relative text-white py-5">
+    <!-- Background blur shape -->
+    <div class="footer-blur-shape"></div>
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Address -->
+        <div class="col-md-4">
+          <h5 class="footer-heading">Address</h5>
+          <p class="footer-text">
+            Pink Go Office, Commence Building.<br />
+            54-1 Maulana Shaukat Ali Road,<br />
+            Township Block 1, Sector B-1,<br />
+            Lahore, Pakistan
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="col-md-2">
+          <h5 class="footer-heading">Links</h5>
+          <ul class="list-unstyled footer-text">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">Ride Hailing</a></li>
+            <li><a href="#" class="footer-link">SOS Feature</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="col-md-3">
+          <h5 class="footer-heading">Let’s be friend</h5>
+          <ul class="list-unstyled footer-text">
+            <li><a href="#" class="footer-link">Instagram</a></li>
+            <li><a href="#" class="footer-link">TikTok</a></li>
+            <li><a href="#" class="footer-link">YouTube</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h5 class="footer-heading">Contact</h5>
+          <p class="footer-text mb-1">info@pink-go.com</p>
+          <p class="footer-text">+92 326 7970010</p>
+        </div>
+      </div>
+
+      <!-- Bottom section -->
+      <div
+        class="footer-bottom pt-4 border-top d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 footer-bottom-text">Designed & Maintained by <strong>Farwa</strong></p>
+        <div class="footer-social-icons d-flex gap-2">
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+  </footer>
+  <!-- footer end -->
+
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./script.js"></script>
+</body>
+
+</html>

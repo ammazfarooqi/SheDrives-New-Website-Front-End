@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Style.scss">
+  <link rel="stylesheet" href="./Style.css"> <!-- not .scss -->
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+      <!-- navbar start -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <a class="navbar-brand logo-text" href="#">SheDrives</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="./Index.html">Home</a>
+        </li>
+
+        <!-- About Us Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About Us
+          </a>
+          <ul class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
+            <li><a class="dropdown-item" href="./About.html">About Us</a></li>
+            <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+            <li><a class="dropdown-item" href="#">Meet Our Founder</a></li>
+            <li><a class="dropdown-item" href="./Mission&vission.html">Mission & Vision</a></li>
+          </ul>
+        </li>
+
+        <!-- Contact Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact
+          </a>
+          <ul class="dropdown-menu custom-dropdown" aria-labelledby="contactDropdown">
+            <li><a class="dropdown-item" href="./Contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="./SupportTeam.html">Support Team</a></li>
+            <li><a class="dropdown-item" href="./PrivacyPolicy.html">Policy & Rules</a></li>
+            <li><a class="dropdown-item" href="#">Collaboration & Advertising</a></li>
+            <li><a class="dropdown-item" href="#">Privacy</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+      </ul>
+
+      <div class="d-flex gap-2">
+        <button class="btn custom-btn">Sign Up</button>
+        <button class="btn custom-btn">Login</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--  -->
+ <!-- Hero Section -->
+<section class="support-team-section py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="support-title">Meet Our Support Team</h2>
+      <p class="support-subtitle">We're here to help you 24/7 with any queries or issues related to SheDrives.</p>
+    </div>
+    <div class="row justify-content-center g-4">
+      <!-- Support Card 1 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="support-card h-100 text-center p-4">
+          <img src="./Images/7.png" class="support-img mb-3" alt="Support Agent">
+          <h5 class="support-name">Ayesha Khan</h5>
+          <p class="support-role">Customer Relations</p>
+          <p class="support-desc">Helps with bookings, ride issues, and user queries with patience and care.</p>
+        </div>
+      </div>
+
+      <!-- Support Card 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="support-card h-100 text-center p-4">
+          <img src="./Images/img7.jpg" class="support-img mb-3" alt="Support Agent">
+          <h5 class="support-name">Fatima Rizwan</h5>
+          <p class="support-role">Tech Support</p>
+          <p class="support-desc">Handles technical concerns, app glitches, and login issues with swift solutions.</p>
+        </div>
+      </div>
+
+      <!-- Support Card 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="support-card h-100 text-center p-4">
+          <img src="./Images/img5.jpg" class="support-img mb-3" alt="Support Agent">
+          <h5 class="support-name">Zainab Ali</h5>
+          <p class="support-role">Safety & Feedback</p>
+          <p class="support-desc">Listens to feedback and ensures our female riders and drivers stay safe & supported.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+     <!-- footer section -->
+  <footer class="shedrives-footer position-relative text-white py-5">
+    <!-- Background blur shape -->
+    <div class="footer-blur-shape"></div>
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Address -->
+        <div class="col-md-4">
+          <h5 class="footer-heading">Address</h5>
+          <p class="footer-text">
+            Pink Go Office, Commence Building.<br />
+            54-1 Maulana Shaukat Ali Road,<br />
+            Township Block 1, Sector B-1,<br />
+            Lahore, Pakistan
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="col-md-2">
+          <h5 class="footer-heading">Links</h5>
+          <ul class="list-unstyled footer-text">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">Ride Hailing</a></li>
+            <li><a href="#" class="footer-link">SOS Feature</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="col-md-3">
+          <h5 class="footer-heading">Let’s be friend</h5>
+          <ul class="list-unstyled footer-text">
+            <li><a href="#" class="footer-link">Instagram</a></li>
+            <li><a href="#" class="footer-link">TikTok</a></li>
+            <li><a href="#" class="footer-link">YouTube</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h5 class="footer-heading">Contact</h5>
+          <p class="footer-text mb-1">info@pink-go.com</p>
+          <p class="footer-text">+92 326 7970010</p>
+        </div>
+      </div>
+
+      <!-- Bottom section -->
+      <div
+        class="footer-bottom pt-4 border-top d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 footer-bottom-text">Designed & Maintained by <strong>Farwa</strong></p>
+        <div class="footer-social-icons d-flex gap-2">
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+  </footer>
+  <!-- footer end -->
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
