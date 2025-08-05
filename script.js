@@ -49,4 +49,22 @@ const revealOnScroll = () => {
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
+// 
+// const dots = document.querySelectorAll('.dot');
+// const sliderTrack = document.querySelector('.slider-track');
+
+// dots.forEach(dot => {
+//   dot.addEventListener('click', () => {
+//     let slideIndex = parseInt(dot.getAttribute('data-slide'));
+
+
+//     sliderTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
+
+
+//     dots.forEach(d => d.classList.remove('active'));
+//     dot.classList.add('active');
+//   });
+// });
+
+
 
