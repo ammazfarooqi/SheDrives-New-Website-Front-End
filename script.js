@@ -49,22 +49,28 @@ const revealOnScroll = () => {
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
-// 
-// const dots = document.querySelectorAll('.dot');
-// const sliderTrack = document.querySelector('.slider-track');
+// account del
+document.addEventListener("DOMContentLoaded", () => {
+  const openBtn = document.querySelector(".open-modal-btn");
+  const modal = document.getElementById("deleteModal");
+  const cancelBtn = document.getElementById("cancelBtn");
 
-// dots.forEach(dot => {
-//   dot.addEventListener('click', () => {
-//     let slideIndex = parseInt(dot.getAttribute('data-slide'));
+  openBtn.addEventListener("click", () => {
+    modal.classList.remove("d-none");
+  });
 
+  cancelBtn.addEventListener("click", () => {
+    modal.classList.add("d-none");
+  });
 
-//     sliderTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
+  // Close when clicking outside modal-box
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("d-none");
+    }
+  });
+});
 
-
-//     dots.forEach(d => d.classList.remove('active'));
-//     dot.classList.add('active');
-//   });
-// });
 
 
 

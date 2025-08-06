@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <!-- Bootstrap CSS -->
+      <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./Style.scss">
   <link rel="stylesheet" href="./Style.css"> <!-- not .scss -->
@@ -14,7 +14,7 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-mQ0URkPwXhTwN1Al9l3r+3YtW4QvM4TGpmh/jFzZsD4LJ3ElQVKqh4Zu8sHVOVYcQDrfILjczICkdY+cLx5K4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -72,47 +72,43 @@
     </div>
   </div>
 </nav>
-<!--  -->
- <!-- Hero Section -->
-<section class="support-team-section py-5">
+    
+<!-- Meet the Team Section -->
+<section class="team-section py-5">
   <div class="container">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <h2 class="support-title">Support Team</h2>
-      <p class="support-subtitle">We're here to help you 24/7 with any queries or issues related to SheDrives.</p>
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2 class="team-heading">Meet <span>The Team</span></h2>
+        <p class="team-desc">
+          Our SheDrives journey is supported by an incredible team of passionate women & allies.
+          We're on a mission to redefine safe rides with purpose, passion, and empowerment.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="team-photo.jpg" alt="Our Team" class="img-fluid rounded shadow team-image" />
+      </div>
     </div>
-    <div class="row justify-content-center g-4">
-      <!-- Support Card 1 -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="support-card h-100 text-center p-4">
-          <img src="./Images/7.png" class="support-img mb-3" alt="Support Agent">
-          <h5 class="support-name">Ayesha Khan</h5>
-          <p class="support-role">Customer Relations</p>
-          <p class="support-desc">Helps with bookings, ride issues, and user queries with patience and care.</p>
-        </div>
-      </div>
 
-      <!-- Support Card 2 -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="support-card h-100 text-center p-4">
-          <img src="./Images/img7.jpg" class="support-img mb-3" alt="Support Agent">
-          <h5 class="support-name">Fatima Rizwan</h5>
-          <p class="support-role">Tech Support</p>
-          <p class="support-desc">Handles technical concerns, app glitches, and login issues with swift solutions.</p>
-        </div>
+    <div class="row align-items-center founder-section">
+      <div class="col-md-6 order-md-2">
+        <h3 class="founder-name">Fatima Rizwan</h3>
+        <p class="founder-title">The Founder</p>
+        <p class="founder-desc">
+         Fatima Rizwan is the heart behind SheDrives – Pakistan’s first female & transgender ride-hailing platform.
+          With her vision and leadership, SheDrives is setting new standards of trust, inclusion, and safety.
+        </p>
+        <p class="founder-desc">
+          Her mission is simple: Empower women, change lives, and drive the future of transport in Pakistan.
+        </p>
       </div>
-
-      <!-- Support Card 3 -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="support-card h-100 text-center p-4">
-          <img src="./Images/img5.jpg" class="support-img mb-3" alt="Support Agent">
-          <h5 class="support-name">Zainab Ali</h5>
-          <p class="support-role">Safety & Feedback</p>
-          <p class="support-desc">Listens to feedback and ensures our female riders and drivers stay safe & supported.</p>
-        </div>
+      <div class="col-md-6 order-md-1">
+        <img src="founder.jpg" alt="Founder" class="img-fluid rounded shadow founder-image" />
       </div>
     </div>
   </div>
 </section>
+
+
 
   <!-- footer section -->
   <footer class="shedrives-footer position-relative text-white py-5">
@@ -132,10 +128,10 @@
         <div class="col-md-2">
           <h5 class="footer-heading">Links</h5>
           <ul class="list-unstyled footer-text">
-            <li><a href="./Index.html" class="footer-link">Home</a></li>
-            <li><a href="./About.html" class="footer-link">About</a></li>
-            <li><a href="./Services.html" class="footer-link">Services</a></li>
-            <li><a href="./Contact.html" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Services</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
           </ul>
         </div>
 
@@ -170,13 +166,11 @@
 
   </footer>
   <!-- footer end -->
+
   <!-- Bootstrap JS (optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
   <script src="./script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  
 </body>
 </html>
