@@ -16,7 +16,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-mQ0URkPwXhTwN1Al9l3r+3YtW4QvM4TGpmh/jFzZsD4LJ3ElQVKqh4Zu8sHVOVYcQDrfILjczICkdY+cLx5K4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -78,93 +79,127 @@
 
   <!-- newcontact desigm -->
 <section class="contact-info-section py-5">
-    <div class="container">
-      <div class="row align-items-start">
-        <div class="col-lg-6 mb-4">
-          <h2 class="heading">Contact <span>Information</span></h2>
-          <p class="desc">Thank you for visiting our website. We are here to assist you with any inquiries you may have.</p>
+  <div class="container">
+    <div class="row align-items-start">
+      <!-- Left Column (Contact Info) -->
+      <div class="col-lg-6 mb-4">
+        <h2 class="heading" 
+            data-aos="fade-right" 
+            data-aos-duration="1200" 
+            data-aos-delay="100">Contact <span>Information</span>
+        </h2>
 
-          <div class="info-box d-flex">
-            <div class="icon-box me-3">
-              <div class="icon-circle">
-                <img src="./Images/time-management.png" alt="">
-              </div>
-            </div>
-            <div class="text-white" style="line-height: 30px;">
-              <strong>Working Hours:</strong><br />Mon - Sat 9:00am - 6:00pm
+        <p class="desc" 
+           data-aos="fade-left" 
+           data-aos-duration="1000" 
+           data-aos-delay="200">
+          Thank you for visiting our website. We are here to assist you with any inquiries you may have.
+        </p>
+
+        <div class="info-box d-flex" 
+             data-aos="fade-down-right" 
+             data-aos-duration="1000" 
+             data-aos-delay="300" 
+             data-aos-easing="ease-in-out">
+          <div class="icon-box me-3">
+            <div class="icon-circle">
+              <img src="./Images/time-management.png" alt="">
             </div>
           </div>
-
-          <div class="info-box d-flex mt-3">
-            <div class="icon-box me-3">
-              <div class="icon-circle">
-                <img src="./Images/gps.png" alt="">
-              </div>
-            </div>
-            <div class="text-white" style="line-height: 30px;">
-              <strong>Office Address:</strong><br />A-2 Block near Hardees Gulberg 3 Lahore, Pakistan
-            </div>
+          <div class="text-white" style="line-height: 30px;">
+            <strong>Working Hours:</strong><br />Mon - Sat 9:00am - 6:00pm
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="form-box p-4">
-            <h5 class="form-title">Ask A Question</h5>
-            <p class="form-sub">If you have any questions, you can contact us. Please, fill out the form below.</p>
-            <form>
-              <div class="row">
-                <div class="col-md-12 mb-4">
-                  <input type="text" placeholder="First Name" class="form-control">
-                </div>
-                <div class="col-md-12 mb-4">
-                  <input type="text" placeholder="Last Name" class="form-control">
-                </div>
-                <div class="col-md-12 mb-4">
-                  <input type="tel" placeholder="Phone Number" class="form-control">
-                </div>
-                <div class="col-md-12 mb-4">
-                  <input type="email" placeholder="Your Email" class="form-control">
-                </div>
-                <div class="col-12 mb-3">
-                  <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="submit-btn">Submit Now</button>
-                </div>
-              </div>
-            </form>
+        <div class="info-box d-flex mt-3" 
+             data-aos="fade-down-left" 
+             data-aos-duration="1000" 
+             data-aos-delay="400" 
+             data-aos-easing="ease-in-out">
+          <div class="icon-box me-3">
+            <div class="icon-circle">
+              <img src="./Images/gps.png" alt="">
+            </div>
+          </div>
+          <div class="text-white" style="line-height: 30px;">
+            <strong>Office Address:</strong><br />A-2 Block near Hardees Gulberg 3 Lahore, Pakistan
           </div>
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-lg-6 mb-4">
-          <div class="map-box">
-            <iframe src="https://maps.google.com/maps?q=Lahore&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h4 class="locations-title">All Locations</h4>
-          <p>Our office is conveniently located at the heart of the city. Use the map to find us easily.</p>
-
-          <div class="location-box mb-3">
-            <h6>United States</h6>
-            <p>A-2 Block near Hardees Gulberg 3 Lahore, Pakistan</p>
-            <p>+92 341 7025881</p>
-            <a href="#">Get Directions →</a>
-          </div>
+      <!-- Right Column (Form) -->
+      <div class="col-lg-6" 
+           data-aos="flip-right" 
+           data-aos-easing="ease-in-out" 
+           data-aos-duration="1200" 
+           data-aos-delay="500">
+        <div class="form-box p-4">
+          <h5 class="form-title">Ask A Question</h5>
+          <p class="form-sub">If you have any questions, you can contact us. Please, fill out the form below.</p>
+          <form>
+            <div class="row">
+              <div class="col-md-12 mb-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <input type="text" placeholder="First Name" class="form-control">
+              </div>
+              <div class="col-md-12 mb-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                <input type="text" placeholder="Last Name" class="form-control">
+              </div>
+              <div class="col-md-12 mb-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                <input type="tel" placeholder="Phone Number" class="form-control">
+              </div>
+              <div class="col-md-12 mb-4" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                <input type="email" placeholder="Your Email" class="form-control">
+              </div>
+              <div class="col-12 mb-3" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+              </div>
+              <div class="col-12" data-aos="zoom-in" data-aos-delay="1100" data-aos-duration="1000">
+                <button type="submit" class="submit-btn">Submit Now</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    <div class="custom-wave">
-  <svg viewBox="0 0 1440 320">
-    <path 
-      d="M0,192L80,165.3C160,139,320,85,480,90.7C640,96,800,160,960,197.3C1120,235,1280,245,1360,250.7L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
-    </path>
-  </svg>
-</div>
 
-  </section>
+    <!-- Map and Locations -->
+    <div class="row mt-5">
+      <div class="col-lg-6 mb-4"
+           data-aos="zoom-in-up"
+           data-aos-offset="200"
+           data-aos-duration="1200"
+           data-aos-delay="200"
+           data-aos-anchor-placement="top-bottom">
+        <div class="map-box">
+          <iframe src="https://maps.google.com/maps?q=Lahore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+        <h4 class="locations-title">All Locations</h4>
+        <p>Our office is conveniently located at the heart of the city. Use the map to find us easily.</p>
+
+        <div class="location-box mb-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+          <h6>United States</h6>
+          <p>A-2 Block near Hardees Gulberg 3 Lahore, Pakistan</p>
+          <p>+92 341 7025881</p>
+          <a href="#">Get Directions →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom SVG Wave -->
+  <div class="custom-wave" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+    <svg viewBox="0 0 1440 320">
+      <path 
+        d="M0,192L80,165.3C160,139,320,85,480,90.7C640,96,800,160,960,197.3C1120,235,1280,245,1360,250.7L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+      </path>
+    </svg>
+  </div>
+</section>
+
 
     <!-- footer section -->
   <footer class="shedrives-footer position-relative text-white py-5">
@@ -230,6 +265,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
   <script src="./script.js"></script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

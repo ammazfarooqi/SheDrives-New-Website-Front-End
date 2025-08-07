@@ -14,6 +14,8 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -80,25 +82,25 @@
         <!-- LEFT IMAGES -->
         <div class="col-lg-6 position-relative">
           <div class="image-grid">
-            <img src="images/img2.jpg" alt="img1" class="main-img"  />
-            <img src="images/img7.jpg" alt="img2" class="circle-img" />
-            <img src="images/img3.jpeg" alt="img3" class="bottom-img" />
+            <img src="images/img2.jpg" alt="img1" class="main-img animate-on-scroll fade-in-left delay-1" />
+            <img src="images/img7.jpg" alt="img2" class="circle-img animate-on-scroll zoom-in delay-2" />
+            <img src="images/img3.jpeg" alt="img3" class="bottom-img animate-on-scroll fade-in-up delay-3" />
           </div>
         </div>
 
         <!-- RIGHT CONTENT -->
         <div class="col-lg-6 mt-4 mt-lg-0">
-          <p class="text-uppercase text-muted fw-semibold mb-2">Our Services</p>
-          <h2 class="mb-3">Empowering Women Through <span>Safe & Reliable Rides</span></h2>
-          <p class="mb-4">
+          <p class="text-uppercase text-muted fw-semibold mb-2 animate-on-scroll fade-in-right delay-4">Our Services</p>
+          <h2 class="mb-3 animate-on-scroll fade-in-right delay-5">Empowering Women Through <span>Safe & Reliable Rides</span></h2>
+          <p class="mb-4 animate-on-scroll fade-in-up delay-6">
            SheDrives is redefining travel for women offering secure, comfortable, and timely rides driven by verified female professionals. Whether it’s your daily commute, school run, or a shopping trip, we’ve got your journey covered.
           </p>
           <div class="row mb-4">
-            <div class="col-6">
+            <div class="col-6" data-aos="zoom-in" data-aos-delay="500">
               <p class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Reliable Service</p>
               <p class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Expert Cleaners</p>
             </div>
-            <div class="col-6">
+            <div class="col-6"  data-aos="zoom-in" data-aos-delay="600">
               <p class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Eco-Friendly</p>
               <p class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Pure Excellence</p>
             </div>
@@ -111,15 +113,15 @@
 <!-- cards -->
   <section class="recent-projects text-center">
   <div class="container">
-    <h2 class="section-title mb-3">Explore the Services <span> We Proudly Delivered!</span></h2>
-    <p class="section-description mb-5">
+    <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="100">Explore the Services <span> We Proudly Delivered!</span></h2>
+    <p class="section-description mb-5" data-aos="fade-up" data-aos-delay="200">
       At SheDrives, we're committed to safe, reliable, and women-led driving services across various sectors. 
       Here's a glimpse of what we've accomplished.
     </p>
 
     <div class="row g-4 justify-content-center">
       <!-- Service 1 -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
         <div class="project-card">
           <img src="./Images/safedrives-for-women.jpg" alt="Corporate Driving Solutions" class="img-fluid rounded-top" />
           <div class="card-content">
@@ -132,7 +134,7 @@
       </div>
 
       <!-- Service 2 -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
         <div class="project-card">
           <img src="./Images/img1 (2).jpg" alt="Home-to-Work Pickup" class="img-fluid rounded-top" />
           <div class="card-content">
@@ -145,7 +147,7 @@
       </div>
 
       <!-- Service 3 -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
         <div class="project-card">
           <img src="./Images/4.png" alt="Event Chauffeur Services" class="img-fluid rounded-top" />
           <div class="card-content">
@@ -225,6 +227,14 @@
   <!-- Custom JS -->
   <script src="./script.js"></script>
 
-    
+   
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
 </body>
 </html>

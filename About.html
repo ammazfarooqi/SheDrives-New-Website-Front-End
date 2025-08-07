@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <!-- Bootstrap CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./Style.scss">
   <link rel="stylesheet" href="./Style.css"> <!-- not .scss -->
@@ -14,7 +15,13 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- GSAP Libraries (ALWAYS load these BEFORE your script) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
+
 <body>
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg custom-navbar">
@@ -23,14 +30,11 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse justify-content-center" id="navMenu">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
           <li class="nav-item">
             <a class="nav-link active" href="./Index.html">Home</a>
           </li>
-
           <!-- About Us Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
@@ -44,8 +48,7 @@
               <li><a class="dropdown-item" href="./Mission&vission.html">Mission & Vision</a></li>
             </ul>
           </li>
-
-           <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="./Services.html">Services</a>
           </li>
           <!-- Contact Dropdown -->
@@ -65,49 +68,50 @@
         </ul>
 
         <div class="d-flex gap-2">
-          <!-- <button class="btn custom-btn">Sign Up</button> -->
-         <button class="btn custom-btn">Download Now</button>
+          <button class="btn custom-btn">Download Now</button>
         </div>
       </div>
     </div>
   </nav>
   <!-- hero about us sectio -->
-<section class="about-hero-section py-5">
-  <div class="container">
-    <div class="row align-items-start position-relative">
-      <!-- Center Sticky Text -->
-      <div class="col-md-6 d-flex justify-content-center">
-        <div class="about-text sticky-text">
-          <h2>About Us</h2>
-        <h6 class="fw-bold mb-3">Driving Change One Woman at a Time</h6>
-          <p>
-          SheDrives is Pakistan’s first ride hailing service exclusively for women, by women. Our mission is simple yet powerful: to create a safe, reliable, and empowering transport solution where women can ride and drive with confidence.
-          We are not just a mobility platform we are a movement. A movement that enables women to reclaim public spaces, earn with dignity, and feel secure on every road they take.
-          </p>
+  <section class="about-hero-section py-5">
+    <div class="container">
+      <div class="row align-items-start position-relative">
+        <!-- Center Sticky Text -->
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="about-text sticky-text">
+            <h2>About Us</h2>
+            <h6 class="fw-bold mb-3">Driving Change One Woman at a Time</h6>
+            <p>
+              SheDrives is Pakistan’s first ride hailing service exclusively for women, by women. Our mission is simple
+              yet powerful: to create a safe, reliable, and empowering transport solution where women can ride and drive
+              with confidence.
+              We are not just a mobility platform we are a movement. A movement that enables women to reclaim public
+              spaces, earn with dignity, and feel secure on every road they take.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="./Images/s-drives.png" alt="SheDrives 1" class="about-img left-img animated-image" />
         </div>
       </div>
-
-      <!-- Right Image -->
-       <div class="col-md-6 d-flex justify-content-center">
-        <img src="./Images/s-drives.png" alt="SheDrives 1" class="about-img left-img" />
-      </div>
     </div>
-  </div>
-</section>
-
-
-<!-- flip cards section -->
- <section class="flip-section py-5">
+  </section>
+  <!-- flip cards section -->
+  <section class="flip-section py-5">
     <div class="container">
       <div class="row g-4">
         <h2>How Protective is SheDrives?</h2>
-         <p>SheDrives is built with security and comfort at its core exclusively for females and transgender individuals in Pakistan. Here's how it ensures a safe and trusted experience:</p>
-       <!-- Card 4 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="custom-shape-img">
-          <img src="./Images/circle-line.png" alt="Custom" />
+        <p>SheDrives is built with security and comfort at its core exclusively for females and transgender individuals
+          in Pakistan. Here's how it ensures a safe and trusted experience:</p>
+        <!-- Card 4 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="custom-shape-img">
+            <img src="./Images/circle-line.png" alt="Custom" />
+          </div>
         </div>
-      </div>
 
         <!-- Card 1 -->
         <div class="col-md-3">
@@ -151,72 +155,77 @@
           </div>
         </div>
 
-  </div>
+      </div>
   </section>
 
-<!-- how its work -->
+  <!-- how its work -->
+  <section class="how-it-works py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
 
-<section class="how-it-works py-5">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <!-- Text Content -->
-      <div class="col-md-6">
-        <h2 class="section-title">
-          <span class="pink-line"></span>
-          <strong>How it Works:</strong>
-        </h2>
-        <p class="section-desc">
-          SheDrives ensures your safety with just one tap.
-        </p>
-        <ul class="feature-list">
-          <li>Instantly share your live location</li>
-          <li>Notify emergency contacts</li>
-          <li>Alert SheDrives’s support team for immediate help</li>
-        </ul>
-        <p class="final-note">Your ride, your safety always in control with SheDrives!</p>
-      </div>
-
-      <!-- Arch Image -->
-      <div class="col-md-6 text-center">
-        <div class="arch-img-wrapper">
-          <img src="./Images/sos.jpg" alt="SheDrives Scooter" class="arch-img" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- moving -->
-<section class="moving-cities-section py-5">
-  <div class="container">
-    <h2 class="section-title mb-5">We're not just moving through cities <span>we're moving lives forward, together.</span></h2>
-    <div class="row g-4">
-      <!-- Left Column -->
-      <div class="col-md-6">
-        <div class="city-card text-center p-3 h-100">
-          <img src="./Images/4.png" alt="Public Transport" class="img-fluid rounded-3 mb-3" />
-          <h4 class="card-heading mb-2">Driving Positive Change in Public Transport</h4>
-          <p class="card-text">
-          SheDrives is helping reshape public mobility by promoting safe, inclusive, and reliable transport options in every city we serve.
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="col-md-6">
-        <div class="city-card text-center p-3 h-100">
-          <img src="./Images/2.png" alt="Healthcare Access" class="img-fluid rounded-3 mb-3" />
-          <h4 class="card-heading mb-2">Making Transportation Accessible for Those Who Need It Most</h4>
-          <p class="card-text">
-            SheDrives is committed to ensuring safe, reliable mobility for women, caregivers, and underserved communities.
+        <!-- Text Content -->
+        <div class="col-md-6" data-aos="fade-right">
+          <h2 class="section-title">
+            <span class="pink-line"></span>
+            <strong>How it Works:</strong>
+          </h2>
+          <p class="section-desc">
+            SheDrives ensures your safety with just one tap.
+          </p>
+          <ul class="feature-list">
+            <li data-aos="fade-up" data-aos-delay="100">Instantly share your live location</li>
+            <li data-aos="fade-up" data-aos-delay="200">Notify emergency contacts</li>
+            <li data-aos="fade-up" data-aos-delay="300">Alert SheDrives’s support team for immediate help</li>
+          </ul>
+          <p class="final-note" data-aos="fade-up" data-aos-delay="400">
+            Your ride, your safety always in control with SheDrives!
           </p>
         </div>
+
+        <!-- Arch Image -->
+        <div class="col-md-6 text-center" data-aos="zoom-in">
+          <div class="arch-img-wrapper">
+            <img src="./Images/sos.jpg" alt="SheDrives Scooter" class="arch-img" />
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- moving -->
+  <section class="moving-cities-section py-5">
+    <div class="container">
+      <h2 class="section-title mb-5" data-aos="fade-right">We're not just moving through cities <span>we're moving lives
+          forward, together.</span></h2>
+      <div class="row g-4">
+        <!-- Left Column -->
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="city-card text-center p-3 h-100">
+            <img src="./Images/4.png" alt="Public Transport" class="img-fluid rounded-3 mb-3" />
+            <h4 class="card-heading mb-2">Driving Positive Change in Public Transport</h4>
+            <p class="card-text">
+              SheDrives is helping reshape public mobility by promoting safe, inclusive, and reliable transport options
+              in every city we serve.
+          </div>
+        </div>
 
+        <!-- Right Column -->
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="city-card text-center p-3 h-100">
+            <img src="./Images/2.png" alt="Healthcare Access" class="img-fluid rounded-3 mb-3" />
+            <h4 class="card-heading mb-2">Making Transportation Accessible for Those Who Need It Most</h4>
+            <p class="card-text">
+              SheDrives is committed to ensuring safe, reliable mobility for women, caregivers, and
+              underserved communities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- footer section -->
+  <!-- footer section -->
   <footer class="shedrives-footer position-relative text-white py-5">
     <!-- Background blur shape -->
     <div class="footer-blur-shape"></div>
@@ -226,7 +235,7 @@
         <div class="col-md-4">
           <h5 class="footer-heading">Address</h5>
           <p class="footer-text">
-          A-2 Block near Hardees Gulberg 3 <br> Lahore, Pakistan
+            A-2 Block near Hardees Gulberg 3 <br> Lahore, Pakistan
           </p>
         </div>
 
@@ -248,14 +257,14 @@
             <li><a href="./Mission&vission.html" class="footer-link">Mission & Vision</a></li>
             <li><a href="./Policy&Rules.html" class="footer-link">Policy & Rules</a></li>
             <li><a href="./Collabrate.html" class="footer-link">Collaboration & Advertising</a></li>
-              <li><a href="./PrivacyPolicy.html" class="footer-link">Privacy</a></li>
+            <li><a href="./PrivacyPolicy.html" class="footer-link">Privacy</a></li>
           </ul>
         </div>
         <!-- Contact -->
         <div class="col-md-3">
           <h5 class="footer-heading">Contact</h5>
           <p class="footer-text mb-1">info@shedrivesapp.com</p>
-            <p class="footer-text mb-1">support@shedrivesapp.com</p>
+          <p class="footer-text mb-1">support@shedrivesapp.com</p>
           <p class="footer-text">+92 341 7025881</p>
         </div>
       </div>
@@ -276,9 +285,19 @@
 
   </footer>
   <!-- footer end -->
-   <!-- Bootstrap JS (optional) -->
+  <!-- Bootstrap JS (optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
   <script src="./script.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+      offset: 100,
+    });
+  </script>
 </body>
 </html>
