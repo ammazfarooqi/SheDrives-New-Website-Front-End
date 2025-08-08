@@ -1,12 +1,37 @@
 window.addEventListener("DOMContentLoaded", () => {
   const bars = document.querySelectorAll(".progress-bar");
+
   bars.forEach(bar => {
-    const value = bar.getAttribute("data-target");
+    const target = parseInt(bar.getAttribute("data-target")); // Target % (bar width ke liye)
+    const valueText = bar.parentElement.previousElementSibling.querySelector(".value");
+
+    // HTML me likha hua final percentage read karo (jaise "25%")
+    const finalValue = parseInt(valueText.textContent);
+
+    let current = 0; // 0 se start
+
+    // Start me hamesha 0% dikhaye
+    valueText.textContent = "0%";
+    bar.style.width = "0%";
+
     setTimeout(() => {
-      bar.style.width = value + "%";
+      const timer = setInterval(() => {
+        if (current < finalValue) {
+          current++;
+          // Bar width target tak jayegi
+          const progressWidth = Math.min(current, target);
+          bar.style.width = progressWidth + "%";
+          // Text value finalValue tak jayega
+          valueText.textContent = current + "%";
+        } else {
+          clearInterval(timer);
+        }
+      }, 20); // animation speed
     }, 300);
   });
 });
+
+
 
 // flip cards
 
@@ -228,31 +253,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     elements.forEach(el => observer.observe(el));
   });
-   document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".animate-on-scroll");
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-        }
-      });
-    }, { threshold: 0.1 });
 
-    elements.forEach(el => observer.observe(el));
+  // safety js
+  // Small fade-in animation on tab change
+document.querySelectorAll('.nav-link').forEach(tab => {
+  tab.addEventListener('shown.bs.tab', function () {
+    const activePane = document.querySelector(this.dataset.bsTarget);
+    activePane.classList.add('fade-in');
+    setTimeout(() => activePane.classList.remove('fade-in'), 500);
   });
-   document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".animate-on-scroll");
+});
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-        }
-      });
-    }, { threshold: 0.1 });
 
-    elements.forEach(el => observer.observe(el));
-  });
   
 
+// terms and condtions
