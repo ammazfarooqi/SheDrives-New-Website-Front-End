@@ -12,6 +12,7 @@
   padding: 0.8rem 0;
   z-index: 1000;
   position: relative;
+  height: 70px;
 }
 .custom-navbar .logo-text {
   font-family: "Pacifico", cursive;
@@ -335,61 +336,110 @@
     transform: translateY(0);
   }
 }
-.aim-vision-mission-section {
+.mission-section-wrapper {
   background-color: #222222;
 }
-.aim-vision-mission-section .card {
-  border: none;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-.aim-vision-mission-section .card .section-title {
-  font-size: 24px;
+.mission-section-wrapper .section-title {
+  font-size: 38px;
   font-weight: 700;
-}
-.aim-vision-mission-section .card .section-title span {
-  color: #000;
   font-family: "Pacifico", cursive;
-}
-.aim-vision-mission-section .card .section-title .highlight {
-  color: #eb008b;
-  font-family: "Pacifico", cursive;
-}
-.aim-vision-mission-section .card ul {
-  margin: 0;
-  padding-left: 1rem;
-}
-.aim-vision-mission-section .card ul li {
-  margin-bottom: 6px;
-  font-size: 15px;
-  color: #333;
-}
-.aim-vision-mission-section .card p {
-  font-size: 15px;
-  color: #444;
-}
-.aim-vision-mission-section .mission-box {
-  border-radius: 10px;
-}
-.aim-vision-mission-section .mission-box .section-title {
-  font-size: 24px;
-  font-weight: 700;
-}
-.aim-vision-mission-section .mission-box .section-title span {
+  letter-spacing: 2px;
   color: #fff;
-  font-family: "Pacifico", cursive;
+  margin-bottom: 20px;
 }
-.aim-vision-mission-section .mission-box .section-title .highlight {
+.mission-section-wrapper .section-title span {
+  color: #ea048b;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
+}
+.mission-section-wrapper .section-description {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.mission-section-wrapper .mission-points,
+.mission-section-wrapper .vision-points {
+  list-style: none;
+  padding-left: 0;
+}
+.mission-section-wrapper .mission-points li,
+.mission-section-wrapper .vision-points li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 25px;
+  position: relative;
+  line-height: 35px;
+}
+.mission-section-wrapper .mission-points li::before,
+.mission-section-wrapper .vision-points li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #eb008b;
+  font-size: 14px;
+}
+.mission-section-wrapper .quote-bubble {
+  background: black;
+  padding: 20px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 35%;
+  right: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.mission-section-wrapper .quote-bubble .quote-icon {
+  font-size: 35px;
+  color: #ea048b;
+  font-weight: 900;
+}
+.mission-section-wrapper .quote-bubble p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.mission-section-wrapper .quote-bubble .author {
+  font-size: 13px;
+  font-weight: 600;
   color: #eb008b;
   font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
 }
-.aim-vision-mission-section .mission-box ul li {
-  font-size: 15px;
-  margin-bottom: 6px;
+.mission-section-wrapper .vision-circle {
+  background: black;
+  padding: 30px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-.aim-vision-mission-section .mission-box p {
-  font-size: 15px;
+.mission-section-wrapper .vision-circle .quote-icon {
+  font-size: 35px;
+  color: #eb008b;
+  font-weight: 900;
+}
+.mission-section-wrapper .vision-circle p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.mission-section-wrapper .vision-circle .author {
+  font-size: 13px;
+  font-weight: 600;
+  color: #eb008b;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
 }
 
 .benefit-section {
@@ -606,6 +656,10 @@
   background-color: #ea048b;
   color: #fff;
   border-color: #ea048b;
+}
+.shedrives-footer .footer-bottom .icon-wrppr a {
+  text-decoration: none;
+  color: none;
 }
 
 .about-hero-section {
@@ -1088,20 +1142,12 @@
     transform: translateX(-50%) translateY(0);
   }
 }
-.mission-section .mission-tag {
-  background-color: #000;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 5px 14px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
-}
 .mission-section .mission-title {
   font-size: 38px;
   font-weight: 700;
   font-family: "Pacifico", cursive;
   letter-spacing: 2px;
+  text-align: center;
 }
 .mission-section .mission-title span {
   color: #ea048b;
@@ -1112,10 +1158,11 @@
   font-size: 18px;
   font-weight: 400;
   color: #000;
-  max-width: 620px;
   z-index: 1;
   position: relative;
-  text-align: justify;
+  text-align: center;
+  width: 700px;
+  margin: auto;
 }
 .mission-section .mission-stat {
   font-size: 37px;
@@ -1338,8 +1385,13 @@
   color: #000;
   font-family: "Segoe UI", sans-serif;
   background-image: url("./Images/spira-2.png");
-  width: 100%;
-  height: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+.privacy-policy-section .policy-content {
+  padding: 40px;
+  border-radius: 12px;
 }
 .privacy-policy-section .main-heading {
   font-size: 37px;
@@ -1347,41 +1399,71 @@
   color: #ea048b;
   border-bottom: 2px solid #ea048b;
   padding-bottom: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
   font-family: "Pacifico", cursive;
+  animation: slideInLeft 1s ease forwards;
 }
 .privacy-policy-section .description {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.8;
-  margin-bottom: 25px;
+  line-height: 1.9;
+  margin-bottom: 30px;
   color: #000;
-}
-.privacy-policy-section .policy-content {
-  padding: 30px;
-}
-.privacy-policy-section .policy-list {
-  list-style-type: disc;
-  padding-left: 20px;
+  text-align: justify;
 }
 .privacy-policy-section .policy-list li {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  border-left: 2px solid #ea048b;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  list-style: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.privacy-policy-section .policy-list li:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateY(-3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .privacy-policy-section .policy-list li h3 {
   font-size: 20px;
   font-weight: 600;
   color: #eb008b;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: "Pacifico", cursive;
 }
-.privacy-policy-section .policy-list li p {
-  font-size: 14px;
+.privacy-policy-section .policy-list li p,
+.privacy-policy-section .policy-list li li {
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #000;
+  margin-bottom: 8px;
 }
 
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .polcy-wrapper .hero-section {
   height: 100%;
   background: url(./Images/2.png) center/cover no-repeat;
@@ -2028,4 +2110,237 @@ body {
   .mission-title {
     font-size: 25px !important;
   }
+}
+.safety-hero {
+  background: url("images/11.png") no-repeat center center/cover;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 550px;
+}
+.safety-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+.safety-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 0 60px;
+  animation: fadeInUp 1.2s ease forwards;
+}
+.safety-hero .hero-content h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  text-align: justify;
+}
+.safety-hero .hero-content h1 span {
+  color: #ea048b;
+  font-family: "Pacifico", cursive;
+}
+.safety-hero .hero-content p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 650px;
+  margin: 0 auto 20px;
+  opacity: 0.9;
+  text-align: justify;
+}
+.safety-hero .hero-content .btn-hero {
+  background: #ea048b;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 28px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.safety-hero .hero-content .btn-hero:hover {
+  background: rgb(251.1142857143, 27.6857142857, 158.8285714286);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .safety-hero {
+    height: 50vh;
+  }
+  .safety-hero .hero-content h1 {
+    font-size: 32px;
+  }
+  .safety-hero .hero-content p {
+    font-size: 14px;
+  }
+}
+
+.safety-section {
+  background: #fafafa;
+}
+.safety-section .main-tabs .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  border-radius: 30px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+.safety-section .main-tabs .nav-link.active {
+  background: #ea048b;
+  color: #fff;
+}
+.safety-section .main-tabs .nav-link:hover {
+  background: rgb(250.8571428571, 12.6428571429, 152.4642857143);
+  color: #fff;
+}
+.safety-section .sub-tabs {
+  border-left: 3px solid #ea048b;
+  padding-left: 10px;
+}
+.safety-section .sub-tabs .nav-link {
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  background: transparent;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  transition: all 0.3s ease;
+  padding: 10px 5px;
+}
+.safety-section .sub-tabs .nav-link.active {
+  background: transparent;
+  color: #ea048b;
+  font-weight: 700;
+  border-bottom: 2px solid #ea048b;
+}
+.safety-section .sub-tabs .nav-link:hover {
+  color: rgb(183.8571428571, 3.1428571429, 109.2142857143);
+}
+.safety-section .safety-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+.safety-section .safety-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ea048b;
+  margin-bottom: 10px;
+}
+.safety-section .safety-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #ea048b;
+}
+.safety-section .safety-card ul {
+  padding-left: 18px;
+  margin-bottom: 15px;
+}
+.safety-section .safety-card ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #000;
+  opacity: 0.85;
+}
+.safety-section .safety-card .promise {
+  margin-top: 15px;
+  font-style: italic;
+  color: rgb(158.7857142857, 2.7142857143, 94.3214285714);
+}
+.safety-section .safety-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+.safety-section .tab-pane {
+  animation: fadeInUp 0.5s ease both;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.terms-section {
+  background: #fff;
+}
+.terms-section .terms-content {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.terms-section .terms-content .main-heading {
+  font-family: "Pacifico", cursive;
+  color: #ea048b;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.terms-section .terms-content .heading-underline {
+  width: 80px;
+  height: 4px;
+  background: #ea048b;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+.terms-section .terms-content .sub-heading {
+  color: #ea048b;
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 5px;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+}
+.terms-section .terms-content .sub-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background: #ea048b;
+  border-radius: 2px;
+}
+.terms-section .terms-content .description {
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.terms-section .terms-content a {
+  color: #ea048b;
+  text-decoration: underline;
+}
+.terms-section .terms-content a:hover {
+  color: #eb008b;
 }/*# sourceMappingURL=Style.css.map */

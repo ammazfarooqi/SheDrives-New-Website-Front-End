@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Style.scss">
+  <link rel="stylesheet" href="./Style.css"> <!-- not .scss -->
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- 3d animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand logo-text" href="#">SheDrives</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="./Index.html">Home</a>
+          </li>
+
+          <!-- About Us Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="./About.html">About Us</a></li>
+              <!-- <li><a class="dropdown-item" href="./MeetTeam.html">Meet the Team</a></li> -->
+              <li><a class="dropdown-item" href="./MeetFounder.html">Meet Our Founder</a></li>
+              <li><a class="dropdown-item" href="./Mission&vission.html">Mission & Vision</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./Services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Safety.html">Safety</a>
+          </li>
+          <!-- Contact Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Contact
+            </a>
+            <ul class="dropdown-menu custom-dropdown" aria-labelledby="contactDropdown">
+              <li><a class="dropdown-item" href="./Contact.html">Contact</a></li>
+              <!-- <li><a class="dropdown-item" href="./SupportTeam.html">Support Team</a></li> -->
+              <li><a class="dropdown-item" href="./PrivacyPolicy.html">Privacy</a></li>
+              <li><a class="dropdown-item" href="./Policy&Rules.html">Policy & Rules</a></li>
+              <li><a class="dropdown-item" href="./terms&conditions.html">Terms & Conditions</a></li>
+              <li><a class="dropdown-item" href="./Collabrate.html">Collaboration & Advertising</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <button class="btn custom-btn">Download Now</button>
+          <!-- <button class="btn custom-btn">Login</button> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="terms-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="terms-content" data-aos="fade-up" data-aos-duration="1000">
+
+            <!-- Main Heading -->
+            <div class="text-center mb-4">
+              <h1 class="main-heading" data-aos="fade-down" data-aos-delay="100">Terms & Conditions</h1>
+              <div class="heading-underline mx-auto" data-aos="zoom-in" data-aos-delay="200"></div>
+            </div>
+
+            <!-- Intro -->
+            <p class="description mb-4" data-aos="fade-up" data-aos-delay="150">
+              These Terms of Use Terms govern your access to and use of the SDrives mobile app, websites, services,
+              content, tools, and overall platform. By agreeing to these Terms or using the Platform, you establish a
+              contractual relationship with us SDrives. Additional terms may apply to specific services, such as Courier
+              or intercity transportation. For details about how we handle your data, please refer to our Privacy
+              Policy.
+            </p>
+
+            <!-- Section 1 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="200">1.Freedom for Drivers.</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="250">
+              Options for Riders Our Operating Model the Platform connects independent providers of transport, courier
+              services Drivers with users seeking those services Passengers. Passengers propose a price for a ride or
+              service, which Drivers can accept or counter with a different offer. Passengers can choose from Drivers
+              interested in their request. Once a Passenger confirms a ride, a separate agreement is established between
+              the Passenger and the Driver. Passengers pay Drivers the mutually agreed price directly, covering all
+              costs (e.g., tolls, taxes, and fees).
+            </p>
+            <p>SDrives does not intervene or influence this financial arrangement. SDrives as a Technology Platform
+              SDrives serves as a technology company facilitating connections between Drivers and Passengers. Users
+              independently decide to offer or use services at their own risk.</p>
+            <p>SDrives does not control Drivers or their service provision. Any tools or processes provided aim to
+              enhance user experience and do not imply an employment or agency relationship.</p>
+            <!-- Section 2 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="300">2. Your SDrives Account</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="350">
+              Account Setup to use the Platform, you must create an account and be at least 18 years old (or the legal
+              age in your jurisdiction). You agree to provide accurate, up-to-date information and may need to verify
+              your identity
+            </p>
+            <p>Account Maintenance You are responsible for keeping your account secure and current. Report any
+              unauthorized activity immediately. Account Termination Accounts inactive for over three years may be
+              deleted. SDrives may retain some information for legal or security purposes.</p>
+
+            <!-- Section 3 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="400">3. Your Safety</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="450">
+              SDrives prioritizes user safety by verifying Driver credentials, conducting checks. Contact local police
+              or share trip details with a trusted contact during emergencies.
+            </p>
+
+            <!-- Section 4 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="500">4.Communication</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="550">
+              Between Drivers and Passengers and Drivers must maintain respectful, professional communication. Misuse of
+              contact information or failure to honor agreed terms is prohibited. SDrives may investigate and take
+              action in cases of harassment or non-compliance.
+            </p>
+
+            <!-- Section 5 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="600">5.Indemnity</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="650">
+              You agree to indemnify and hold SDrives, its affiliates, and representatives harmless from any claims,
+              liabilities, or expenses arising from: Your use of the Platform or Services.
+              Your violation of these Terms, applicable laws. Disputes between Drivers and Passengers.
+            </p>
+
+            <!-- Section 6 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="700">6.Liability</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="750">
+              Between Drivers and Passengers and Drivers must maintain respectful, professional communication. Misuse of
+              contact information or failure to honor agreed terms is prohibited. SDrives may investigate and take
+              action in cases of harassment or non-compliance.
+            </p>
+
+            <!-- Section 7 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="800">7.Resolving Disputes</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="850">
+              Disputes will first be resolved amicably. If unresolved, arbitration under the Pakistan LAW will apply.
+              Arbitration will be governed by Pakistan law.
+            </p>
+            <!-- Section 8 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="900">8. Updates to Terms or Platform</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="850">
+              SDrives may update these Terms or Platform features periodically. Changes will be communicated through app
+              notifications or emails. Continued usage indicates agreement to updated Terms.
+            </p>
+            <!-- Section 9 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="1000">9.General Terms</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="850">
+              General Terms Ensure your app is updated for compatibility. Links to third-party websites or services are
+              not with SDrives. These Terms do not affect your statutory rights.
+            </p>
+
+
+            <!-- Main Heading -->
+            <div class="text-center mb-4">
+              <h1 class="main-heading" data-aos="fade-down" data-aos-delay="100">SDrives Courier Terms of Use</h1>
+              <div class="heading-underline mx-auto" data-aos="zoom-in" data-aos-delay="200"></div>
+            </div>
+            <!-- Intro -->
+            <p class="description mb-4" data-aos="fade-up" data-aos-delay="150">
+              These terms are part of our overall Terms of Use. By using SDrives' Courier service, you're agreeing to
+              follow both these terms and the general rules we’ve set out. If there’s any confusion or conflict between
+              the two, these specific terms will take priority. This applies to SDrives’ apps, websites, products,
+              services, and platform.
+            </p>
+            <p>If you’re using the platform as a Courier, there might be extra terms you need to follow. To see how we
+              handle your personal information, take a look at our Privacy Policy. By agreeing to these terms (or simply
+              using the platform), you’re entering into an agreement with us.</p>
+            <!-- Section 1 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="200">SDrives Courier</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="250">
+              Senders can choose a Courier from a list of options. Once the Sender agrees to the terms, the process
+              moves forward.
+
+              SDrives is the platform that connects Couriers with Users (Senders). When a Sender wants to make a
+              delivery, they propose a price for the Courier’s service. The Courier has the choice to accept that price
+              or suggest something different.
+            </p>
+            <p>The Sender will then pay the agreed-upon amount through the platform, which covers all costs involved in
+              the delivery like fees, taxes, tolls, and any other charges. SDrives doesn’t get involved in the payment
+              between the Sender and the Courier; that’s all handled directly between them. Users Responsibilities</p>
+            <p>SDrives does not control Drivers or their service provision. Any tools or processes provided aim to
+              enhance user experience and do not imply an employment or agency relationship.</p>
+            <p>Make sure the courier can easily access the delivery address, and either you or someone you trust should
+              be available to accept the parcel when it arrives. It’s on you to pack the parcel securely so nothing gets
+              damaged during transit. If anything’s delayed or damaged due to poor packing or wrong delivery details,
+              you’ll be held responsible. You’re fully responsible for any legal issues that arise if you send items
+              you’re not authorized to send.</p>
+            <!-- Section 2 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="300">Courier Responsibilities</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="350">
+              As a Courier, you are responsible for ensuring the Parcel is safely and promptly transported from
+              collection to delivery. It is your duty to take the necessary precautions to avoid any loss or damage
+              during transit. You could be held accountable for any damage or loss that occurs during delivery, within
+              any limitations of liability that apply.
+            </p>
+            <p>
+              Both the Sender and the Courier agree that their responsibilities are limited to what is outlined above.
+              Neither party will be held accountable for any delays or failures due to circumstances beyond their
+              control, such as natural disasters, government actions, or other force majeure events.
+            </p>
+            <p>If the delivery cannot be completed because the Recipient is unavailable or incorrect details were
+              provided by the Sender, SDrives will not be responsible for storing the Parcel. The Sender and Recipient
+              are responsible for making new arrangements for the Parcel’s handling.</p>
+            <p>Upon receiving the Parcel from the Sender, you may choose to Carefully inspect its contents. Ask the
+              Sender to disclose the contents and properly seal the package. Refuse to accept the Parcel if the Sender
+              refuses to comply, or if the contents seem suspicious or illegal. If you suspect a breach of these Terms
+              or the law, you should contact us at <a href="">https://sdrivesapp.com/support</a></p>
+            <!-- Section 3 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="400">Restricted Goods</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="450">
+              You are responsible for making sure that the Parcel does not contain any restricted items. Restricted
+              Goods include, but are not limited to
+            </p>
+            <strong>Parcels valued over PKR 10,000.</strong>
+            <p>You are responsible for making sure that the Parcel does not contain any restricted items. Restricted
+              Goods include, but are not limited to
+
+              Narcotics, prescription drugs, psychotropic substances, explosives, hazardous chemicals, radioactive
+              materials, firearms, ammunition, fireworks, etc.</p>
+            <p>Foreign currency or banknotes. High-value items like jewelry, precious metals, or gemstones. Hazardous or
+              perishable materials that could be harmful to others or the environment.
+
+              Animals, regulated species, or biological materials. Items requiring special transport, such as food or
+              liquids in unapproved containers.</p>
+            <p>Fragile items without proper packaging. Shipments that are prohibited by law. Illegal goods or
+              counterfeit products. Hazardous waste (e.g., batteries). Alcoholic beverages, tobacco products,
+              e-cigarettes, or obscene materials. For inquiries, please contact us through our support page: <a
+                href="">https://sdrivesapp.com/support</a></p>
+            <!-- Section 4 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="500">SDrives Inter City</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="550">
+              These are the rules for using SDrives. Inter City services, including our app, website, and platform. By
+              using SDrives. Inter City you agree to follow these Terms. If anything doesn’t match up, these Terms will
+              take the lead. By accepting these Terms or jumping on the platform, you’re officially teaming up with us
+            </p>
+            <p>if you’re using SDrives as a Driver, there might be some extra rules just for you. And if you're curious
+              about how we handle your personal info, take a look at our Privacy Policy.</p>
+            <strong>How SDrives. Inter City Works</strong>
+            <p>Connecting Drivers & Passengers: Our platform connects Drivers (people offering rides) with Passengers
+              (people needing rides) for trips between cities. When a Passenger requests a ride, they’ll suggest a
+              price. Drivers can either accept it or suggest a different one.
+
+              Choosing a Driver: Once a Passenger requests a ride, they can pick a Driver from the list. Once they
+              confirm, the deal made directly between both of you.</p>
+            <p>Payment: The Passenger pays the agreed price directly to the Driver through the platform. This price
+              covers everything tolls, taxes, and any extra fees. SDrives doesn't get involved in payments. It’s all
+              between you and the Driver.
+
+              Creating Ride Offers: Drivers can post their ride offers, with details like pick up time, location, number
+              of seats, and the price. Agreeing to Offers: The Passenger can agree to the Driver’s offer and price. The
+              Driver can accept or decline the request.</p>
+            <!-- Section 5 -->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="600">Passenger Responsibilities</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="650">
+              Providing Accurate Details: As a Passenger it’s your job to provide the right details for your ride like
+              the correct address, street name, or house number. Or, just pick from available options.
+
+              Accountability for Mistakes: If you mess up with the details, causing problems, you’ll be responsible for
+              fixing it.
+            </p>
+
+             <!-- Section 6-->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="600">Driver Responsibilities</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="650">
+             Sticking to Your Area: Drivers, make sure to accept rides within your registered area. If you go outside it, you're taking the risk of not following local rules.
+            </p>
+              <!-- Section 7-->
+            <h3 class="sub-heading mt-4" data-aos="fade-right" data-aos-delay="600">Driver Responsibilities</h3>
+            <p class="description" data-aos="fade-up" data-aos-delay="650">
+            Got any questions or need help? Just reach out to SDrives Support we’ve got your back!
+            </p>
+            <!-- Contact -->
+            <p class="description mt-4" data-aos="fade-up" data-aos-delay="900">
+            Contact Us For questions or support, visit our Support Contact Page.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer section -->
+  <footer class="shedrives-footer position-relative text-white py-5">
+    <!-- Background blur shape -->
+    <div class="footer-blur-shape"></div>
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Address -->
+        <div class="col-md-4">
+          <h5 class="footer-heading">Address</h5>
+          <p class="footer-text">
+            A-2 Block near Hardees Gulberg 3 <br> Lahore, Pakistan
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="col-md-2">
+          <h5 class="footer-heading">Links</h5>
+          <ul class="list-unstyled footer-text">
+            <li><a href="./Index.html" class="footer-link">Home</a></li>
+            <li><a href="./About.html" class="footer-link">About</a></li>
+            <li><a href="./Services.html" class="footer-link">Services</a></li>
+            <li><a href="./Contact.html" class="footer-link">Contact</a></li>
+            <li><a href="./PrivacyPolicy.html" class="footer-link">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="footer-heading">Links</h5>
+          <ul class="list-unstyled footer-text">
+
+            <li><a href="./Policy&Rules.html" class="footer-link">Policy & Rules</a></li>
+            <li><a href="./Mission&vission.html" class="footer-link">Mission & Vision</a></li>
+            <li><a href="./MeetFounder.html" class="footer-link">Meet Our Founder</a></li>
+            <li><a href="./terms&conditions.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="./Collabrate.html" class="footer-link">Collaboration & Advertising</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h5 class="footer-heading">Contact</h5>
+          <p class="footer-text mb-1">info@shedrivesapp.com</p>
+          <p class="footer-text mb-1">support@shedrivesapp.com</p>
+          <p class="footer-text">+92 341 7025881</p>
+        </div>
+      </div>
+
+      <!-- Bottom section -->
+      <div
+        class="footer-bottom pt-4 border-top d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="icon-wrppr">
+          <a href="https://apps.apple.com/pk/app/shedrives/id6670424505">
+            <img src="./Images/app-1.png" alt="">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.mtech.sdrives">
+            <img src="./Images/google-1.png" alt="">
+          </a>
+        </div>
+        <div class="footer-social-icons d-flex gap-2">
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+  </footer>
+  <!-- footer end -->
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration
+      once: true,     // animation on scroll only once
+    });
+  </script>
+</body>
+
+</html>
