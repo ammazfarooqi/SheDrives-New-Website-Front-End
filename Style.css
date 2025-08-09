@@ -12,7 +12,6 @@
   padding: 0.8rem 0;
   z-index: 1000;
   position: relative;
-  height: 70px;
 }
 .custom-navbar .logo-text {
   font-family: "Pacifico", cursive;
@@ -888,7 +887,7 @@
 }
 @media (max-width: 768px) {
   .how-it-works .section-title {
-    text-align: center;
+    text-align: justify !important;
   }
   .how-it-works .read-more-btn {
     margin: 0 auto;
@@ -1992,7 +1991,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Optional heading animation highlight */
 .open-modal-btn {
   background-color: #ea048b;
   border: none;
@@ -2109,6 +2107,190 @@ body {
   }
   .mission-title {
     font-size: 25px !important;
+    text-align: left !important;
+  }
+  .hero-title {
+    font-size: 25px !important;
+    letter-spacing: 2px !important;
+    line-height: 35px !important;
+  }
+  .main-heading {
+    font-size: 25px !important;
+    letter-spacing: 2px !important;
+    text-align: left !important;
+  }
+  .hero-subtext {
+    font-size: 14px !important;
+  }
+  .description {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    text-align: left !important;
+  }
+  .section-title {
+    font-size: 25px !important;
+    letter-spacing: 2px !important;
+    line-height: 35px !important;
+  }
+  .benefit-section {
+    padding: 0px 0px !important;
+  }
+  .benefit-list li strong {
+    font-size: 16px !important;
+  }
+  .benefit-list li p {
+    font-size: 13px !important;
+  }
+  .benefit-description {
+    font-size: 13px !important;
+  }
+  .booking-steps {
+    padding: 8px 0px !important;
+  }
+  .step-content {
+    padding: 30px 0px !important;
+  }
+  .step-number {
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    font-size: 20px !important;
+    top: -10px !important;
+    left: 0px !important;
+  }
+  .step-heading {
+    font-size: 20px !important;
+  }
+  .step-desc {
+    font-size: 14px !important;
+  }
+  .icon-wrppr {
+    margin-bottom: 28px !important;
+  }
+  .sticky-text h2 {
+    font-size: 28px !important;
+  }
+  .flip-section h2 {
+    font-size: 25px !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 0 !important;
+  }
+  .flip-section p {
+    text-align: left !important;
+    line-height: 25px !important;
+  }
+  .custom-shape-img img {
+    display: none !important;
+  }
+  .flip-card-front h3 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+  }
+  .section-desc {
+    font-size: 14px !important;
+  }
+  .feature-list li {
+    font-size: 14px !important;
+    margin-bottom: 14px !important;
+  }
+  .final-note {
+    font-size: 14px !important;
+  }
+  .founder-heading {
+    font-size: 30px !important;
+    letter-spacing: 3px !important;
+  }
+  .founder-bio {
+    font-size: 13px !important;
+  }
+  .mission-desc {
+    font-size: 15px !important;
+    text-align: justify !important;
+    width: auto !important;
+  }
+  .quote-bubble {
+    width: 230px !important;
+    height: 230px !important;
+    top: -21% !important;
+    right: 6px !important;
+    padding: 15px;
+  }
+  .quote-bubble p {
+    margin-bottom: 0 !important;
+    text-align: center !important;
+    font-size: 12px !important;
+  }
+  .main-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 14px !important;
+  }
+  .main-tabs .nav-link {
+    border: 1px solid #eb008b !important;
+    width: 100% !important;
+  }
+  .sub-tabs {
+    margin-bottom: 30px !important;
+  }
+  .policy-content {
+    padding: 0px 0px !important;
+  }
+  .display-4 {
+    font-size: 30px !important;
+  }
+  .lead {
+    font-size: 14px !important;
+  }
+  .policy-intro h2 {
+    font-size: 30px !important;
+  }
+  .policy-intro p {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+  .section-heading {
+    font-size: 30px !important;
+  }
+  .rules-list li {
+    font-size: 13px !important;
+  }
+  .heading {
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+  }
+  .desc {
+    font-size: 13px !important;
+    line-height: 22px !important;
+  }
+  .policy-list li ul {
+    padding: 0px 0px !important;
+  }
+  .policy-list li p {
+    font-size: 13px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+  .hero {
+    min-height: 390px !important;
+    padding: 6px 25px !important;
+  }
+  .content h1 {
+    font-size: 30px !important;
+    text-align: left !important;
+    letter-spacing: 2px !important;
+  }
+  .content p {
+    font-size: 14px !important;
+    text-align: left !important;
+  }
+  .info-section h3 {
+    font-size: 20px !important;
+  }
+  .custom-card li {
+    font-size: 13px !important;
+    margin-bottom: 10px !important;
+    text-align: left !important;
   }
 }
 .safety-hero {
@@ -2189,10 +2371,14 @@ body {
     height: 50vh;
   }
   .safety-hero .hero-content h1 {
-    font-size: 32px;
+    font-size: 30px !important;
+    text-align: left !important;
+    line-height: 43px !important;
   }
   .safety-hero .hero-content p {
-    font-size: 14px;
+    font-size: 14px !important;
+    text-align: left !important;
+    line-height: 22px !important;
   }
 }
 
